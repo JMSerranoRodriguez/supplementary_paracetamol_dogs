@@ -1,7 +1,7 @@
 
-# 3D surface plots - Paracetamol in dogs (for Ludovic Pelligand) #
+# 3D surface plots - Paracetamol in dogs (from Ludovic Pelligand) #
 
-## 4 plots to be created, 1 for each dog breed (Beagles and others, Greyhounds, Labradors) and 1 for human as comparison. Data to use is the mean data locatd in the "mean" tab of Excel. For each plot a HTML widget to be prepared for repository ##
+## 4 plots to be created, 1 for each dog breed (Beagles and others, Greyhounds, Labradors) and 1 for human as comparison. Data to use is the mean data located in the "mean" tab of Excel. For each plot a HTML widget to be prepared for repository ##
 
 # Dataset PTA imported from Excel, no headings  - labelled according to breed #
 
@@ -54,7 +54,8 @@ Fig_Beagle <- plot_ly(
                    tickvals = Doses,        # your actual numeric values
                    ticktext = Doses         # display full values
       ),
-      zaxis = list(title = "Time median concentration above target (%)")
+      zaxis = list(title = "Time median concentration above target (%)",
+                   range = c(-5, 100))
     )
   )
 
@@ -83,7 +84,8 @@ Fig_GreyHounds <- plot_ly(
                    tickvals = Doses,        # your actual numeric values
                    ticktext = Doses         # display full values
       ),
-      zaxis = list(title = "Time median concentration above target (%)")
+      zaxis = list(title = "Time median concentration above target (%)",
+                   range = c(-5, 100))
     )
   )
 
@@ -146,6 +148,7 @@ Fig_Labrador <- plot_ly(
   )
 
 # NOTE: Write the correct path where your file is located. In this example, a Windows directory is shown, but select the one that is most appropriate for your computer.#
+
 # Create HTML widget for interactive plot # 
 htmlwidgets::saveWidget(Fig_Beagle, "C:/Users/super/Downloads/3Dplot_ParacetamolDogs_PC/Fig_Beagle.html")
 
