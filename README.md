@@ -4,7 +4,7 @@ Supplementary material for modeling and simulation of intravenous paracetamol in
 This repository contains the supplementary material related to the study entitled: 
 “Population Pharmacokinetics of Intravenous Paracetamol: Do All Dog Breeds Process the Drug Similarly?” 
 It includes the MLXTRAN codes used for modelling and simulation in MonolixSuite, as well as various plots for the population model validation. 
-The dataset and the project in monolix and simulx are availabe.
+The dataset and the project in Monolix and Simulx are availabe.
 Run the provided Monolix and Simulx projects to obtain PTA values, export the results, and use the supplied R project to generate the 3D simulations.
 Finally, it also contains the R file and accompanying scripts used to generate the 3D surface plots and to compare the targets.
 You will need to have a version of R installed on your machine to run the visualisation widgets. 
